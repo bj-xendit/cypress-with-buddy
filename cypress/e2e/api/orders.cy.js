@@ -18,3 +18,25 @@ cy.request('POST', baseUrl + '/api/auth/email',{
 })
 
 })});
+
+describe('Get product list',()=>{
+    it('get product list - GET ',()=>
+    cy.request({
+        
+        method:'GET',
+        url: baseUrl + '/api/v2/product',
+        headers:{
+            'x-session-token':token
+        }
+}
+).then((response)=>{
+
+    cy.log('total item ' + response.body.total)
+    cy.wrap(response.body.total).should('be.gt',0);
+     cartItem =  response.body.data[0].id;
+     cartItemVariant = response.body.data[0].variants[0].id;
+
+
+    }))});
+
+
