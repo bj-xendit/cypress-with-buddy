@@ -19,5 +19,8 @@
   "homepage": "https://github.com/bj-xendit/cypress-with-buddy#readme",
   "dependencies": {
     "cypress": "^10.3.0"
+  },
+  "devDependencies": {
+    "start-server-and-test": "^1.14.0"
   }
 }
