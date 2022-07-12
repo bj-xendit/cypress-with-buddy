@@ -1,6 +1,6 @@
-const baseUrl= '';
-const email='';
-const password='';
+const baseUrl= Cypress.env('baseUrl');
+const email=Cypress.env('email');
+const password=Cypress.env('password');
 
 
 var token;
