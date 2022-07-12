@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"npx cypress open",
+    "start-server": "npm start",
+         "cy:run": "cypress run",
+         "cy:ci": "start-server-and-test start-server http://localhost:3000 cy:run"
   },
   "repository": {
     "type": "git",
@@ -19,5 +23,8 @@
   "homepage": "https://github.com/bj-xendit/cypress-with-buddy#readme",
   "dependencies": {
     "cypress": "^10.3.0"
+  },
+  "devDependencies": {
+    "start-server-and-test": "^1.14.0"
   }
 }
