@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/bj-xendit/cypress-with-buddy/issues"
   },
-  "homepage": "https://github.com/bj-xendit/cypress-with-buddy#readme"
+  "homepage": "https://github.com/bj-xendit/cypress-with-buddy#readme",
+  "dependencies": {
+    "cypress": "^10.3.0"
+  }
 }
